@@ -1,0 +1,44 @@
+body {
+  background-color: #70767f;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: red;
+}
+
+.App-title {
+  font-size: 50px;
+}
+
+.App-intro {
+  font-size: 30px;
+}
+
+.Display-text {
+  margin: 30px;
+  font-size: 22px;
+}
+
+.input-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.comment-button {
+  margin: 30px;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
