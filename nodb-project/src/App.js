@@ -3,6 +3,8 @@ import './App.css';
 import axios from 'axios';
 
 import TextDisplay from './components/textDisplay';
+import PostButton from './components/postButton';
+import MoreText from './components/moreText';
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +16,7 @@ class App extends Component {
       gameToAdd: {
         title: '',
         imageUrl: '',
-        releasDate: ''
+        releaseDate: ''
       }
     }
   }
@@ -84,7 +86,7 @@ class App extends Component {
         <div className="game-buttons">
         <button onClick={this.submitGameRequest}>Get Games!</button>
         <button onClick={this.addGame}>Add Game!</button>
-        <button onClick={this.deleteGame}>Delete Game!</button>
+        <button onClick={this.deleteGame}>Delete Games!</button>
         </div>
         <div className="input-boxes">
           <input name='title' onChange={this.handleInputChange} placeholder="Title"/>
@@ -93,9 +95,12 @@ class App extends Component {
         </div>
           <div className="Display-text">
             <TextDisplay games={this.state.games}></TextDisplay>
+          </div>
         <button className="comment-button" onClick={this.submitComment}>Post Comment!</button>
         <input onChange={this.handleChange} placeholder="Comment Here"/>
-          </div>
+        <MoreText />
+        <PostButton />
+          
       </div>
     );
   }
