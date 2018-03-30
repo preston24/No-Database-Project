@@ -3,8 +3,6 @@ import './App.css';
 import axios from 'axios';
 
 import TextDisplay from './components/textDisplay';
-import PostButton from './components/postButton';
-import MoreText from './components/moreText';
 
 class App extends Component {
   constructor(props) {
@@ -98,8 +96,6 @@ class App extends Component {
           </div>
         <button className="comment-button" onClick={this.submitComment}>Post Comment!</button>
         <input onChange={this.handleChange} placeholder="Comment Here"/>
-        <MoreText />
-        <PostButton />
           
       </div>
     );

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 class TextDisplay extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
   render() {
     return (
       <div>
@@ -12,7 +12,7 @@ class TextDisplay extends Component {
           return (
             <div>
               <h4>{game.title} <em>{game.releaseDate}</em></h4> 
-              <img src={game.imageUrl} width='300' />
+              <img src={game.imageUrl} width='300' alt="" />
             </div>
           )
         })}
